@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-canvas: #090A0D;
+  --color-band: #0E1015;
+  --color-surface: #13161C;
+  --color-elevated: #1A1E26;
+  --color-hairline: #232732;
+  --color-hairline-strong: #313644;
+  --color-ink: #F4F5F7;
+  --color-ink-muted: #9CA3AF;
+  --color-ink-subtle: #6B7280;
+  --color-accent: #2563EB;
+  --color-accent-bright: #60A5FA;
+}
+
+@layer base {
+  html {
+    background-color: #090A0D;
+    color: #F4F5F7;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    margin: 0;
+    background-color: #090A0D;
+    color: #F4F5F7;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid #60A5FA;
+    outline-offset: 3px;
+  }
+}
+
+.hero-grid-surface {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 40%, transparent 100%);
+}
