@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const PORT = Number(process.env.PORT) || 3000;
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production' || process.argv.includes('--production');
 
 const PORTFOLIO_SYSTEM_INSTRUCTION = `You are the portfolio assistant for Arham Ali.
 
@@ -130,7 +130,7 @@ async function startServer() {
 
       if (status === 400 || status === 403 || rawMessage.includes('API_KEY_INVALID') || rawMessage.includes('GEMINI_API_KEY')) {
         res.status(status === 403 ? 403 : 400).json({
-          error: 'Gemini API key is missing or invalid. Please verify GEMINI_API_KEY in Settings > Secrets.',
+          error: 'Gemini API key is missing or invalid. Please configure GEMINI_API_KEY in your .env file.',
         });
         return;
       }

@@ -310,22 +310,22 @@ export const ENGINEERING_STANDARDS: StandardItem[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'GitHub',
-    handle: 'github.com/arhamali',
-    href: 'https://github.com',
+    handle: 'github.com/Arhamaley',
+    href: 'https://github.com/Arhamaley',
   },
   {
     label: 'LinkedIn',
     handle: 'linkedin.com/in/arhamali',
-    href: 'https://linkedin.com',
+    href: 'https://linkedin.com/in/arhamali',
   },
   {
     label: 'Dribbble',
     handle: 'dribbble.com/arhamali',
-    href: 'https://dribbble.com',
+    href: 'https://dribbble.com/arhamali',
   },
   {
     label: 'X / Twitter',
     handle: 'x.com/arhamali',
-    href: 'https://x.com',
+    href: 'https://x.com/arhamali',
   },
 ];
