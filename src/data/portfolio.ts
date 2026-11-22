@@ -59,9 +59,9 @@ export const PORTFOLIO_OWNER = {
   heroImage: '/src/assets/images/hero_workspace_editorial_1795099469946.jpg',
   heroImageAlt:
     'Minimalist dark architectural desk setup displaying clean source code and structural diagrams on a matte black monitor',
-  portraitImage: '/src/assets/images/arham_portrait_editorial_1795101183176.jpg',
+  portraitImage: '/src/assets/images/arham_portrait.jpg',
   portraitAlt:
-    'Editorial portrait of Arham Ali, 22-year-old software developer and UI/UX designer holding a wireframe notebook against a dark charcoal architectural wall',
+    'Portrait of Arham Ali, software developer and UI/UX designer',
 };
 
 export const CREDENTIAL_METRICS = [

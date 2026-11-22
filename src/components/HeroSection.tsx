@@ -112,7 +112,7 @@ export function HeroSection({ copiedEmail, onCopyEmail }: HeroSectionProps) {
                 title="Arham Ali Portrait"
                 loading="eager"
                 containerClassName="h-full w-full rounded-full"
-                className="h-full w-full rounded-full object-cover object-top"
+                className="h-full w-full rounded-full object-cover object-[center_35%]"
               />
             </motion.div>
             <p className="mt-4 text-center text-xs text-[#9CA3AF]">
