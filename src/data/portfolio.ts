@@ -1,4 +1,8 @@
-export type WorkCategory = 'Web Engineering' | 'UI/UX Systems' | 'Graphic Design';
+export type WorkCategory =
+  | 'AI & Machine Learning'
+  | 'Web Engineering'
+  | 'UI/UX Systems'
+  | 'Graphic Design';
 
 export interface ProjectItem {
   id: string;
@@ -19,6 +23,9 @@ export interface ProjectItem {
     accessibilityAndCode: string;
   };
   deliverables: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+  badge?: string;
 }
 
 export interface CapabilityItem {
@@ -77,6 +84,166 @@ export const CREDENTIAL_METRICS = [
 ];
 
 export const PROJECTS: ProjectItem[] = [
+  {
+    id: 'tracelens',
+    title: 'Tracelens',
+    category: 'Web Engineering',
+    year: '2026',
+    role: 'Lead Full-Stack Developer',
+    badge: 'Observability & ML',
+    summary:
+      'Distributed request-tracing and developer analytics platform designed for real-time observability, telemetry streaming, and ML-based error clustering.',
+    featured: true,
+    imagePath: '/src/assets/images/work_tracelens_telemetry.jpg',
+    imageAlt:
+      'Real-time developer telemetry dashboard showing distributed request traces, latency waterfall charts, and error clustering logs',
+    aspectClass: 'aspect-[16/10]',
+    outcome: 'Sub-second WebSocket telemetry streaming with automated ML error clustering',
+    stack: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Node.js', 'Socket.io', 'REST APIs'],
+    uxBreakdown: {
+      problem:
+        'Modern distributed web applications produce fragmented telemetry logs across microservices that are difficult to correlate without heavy, expensive enterprise monitoring infrastructure.',
+      interactionDecisions:
+        'Constructed an interactive waterfall span timeline with high-contrast latency visualizers, keyboard-navigable trace rows, and real-time socket updates.',
+      accessibilityAndCode:
+        'Enforced OpenTelemetry-compliant trace schemas, ARIA live announcements for streaming errors, and zero-layout-shift canvas chart rendering.',
+    },
+    deliverables: [
+      'Distributed request-tracing engine',
+      'Interactive span waterfall UI',
+      'WebSocket live metric stream',
+    ],
+    githubUrl: 'https://github.com/Arhamaley',
+    liveUrl: 'https://github.com/Arhamaley',
+  },
+  {
+    id: 'rag-knowledge-engine',
+    title: 'RAG Knowledge Engine & Vector Search',
+    category: 'AI & Machine Learning',
+    year: '2026',
+    role: 'Full-Stack & AI Engineer',
+    badge: 'GenAI & Vector Search',
+    summary:
+      'Full-stack retrieval-augmented generation (RAG) platform connecting Supabase pgvector cosine similarity search with Google Gemini LLM answer streaming.',
+    featured: true,
+    imagePath: '/src/assets/images/work_rag_vector_engine.jpg',
+    imageAlt:
+      'Abstract glowing neural network and vector database concept visualization',
+    aspectClass: 'aspect-[16/10]',
+    outcome: 'Low-latency semantic document retrieval with real-time token-by-token Gemini streaming',
+    stack: ['TypeScript', 'React', 'Google Gemini API', 'Supabase pgvector', 'Next.js', 'Tailwind CSS'],
+    uxBreakdown: {
+      problem:
+        'Static applications and documentation portals cannot dynamically synthesize context-specific answers from large custom datasets in real time.',
+      interactionDecisions:
+        'Designed a conversational search interface with instant citation tags, source document preview cards, and streaming markdown formatting.',
+      accessibilityAndCode:
+        'Accessible keyboard-first query inputs, WCAG AA contrast on code blocks, and resilient error recovery with fallback embeddings.',
+    },
+    deliverables: [
+      'Vector search indexing pipeline',
+      'Streaming Gemini chat interface',
+      'Knowledge base ingestion & chunking tools',
+    ],
+    githubUrl: 'https://github.com/Arhamaley',
+    liveUrl: 'https://github.com/Arhamaley',
+  },
+  {
+    id: 'image-tampering-detection',
+    title: 'Image Tampering Detection',
+    category: 'AI & Machine Learning',
+    year: '2026',
+    role: 'AI / ML & Full-Stack Developer',
+    badge: '90%+ CV Accuracy',
+    summary:
+      'Intelligent computer vision system leveraging Error Level Analysis (ELA) and Convolutional Neural Networks (CNNs) in TensorFlow to detect image splicing with over 90% accuracy.',
+    featured: true,
+    imagePath: '/src/assets/images/work_image_tampering_forensics.jpg',
+    imageAlt:
+      'Forensic digital security visualization displaying binary matrices and computer vision analysis masks',
+    aspectClass: 'aspect-[4/3]',
+    outcome: '90%+ forensic detection accuracy distinguishing authentic media from spliced imagery',
+    stack: ['Python', 'TensorFlow', 'OpenCV', 'Flask', 'React', 'Tailwind CSS', 'ELA Forensics'],
+    uxBreakdown: {
+      problem:
+        'Digital image manipulation and deepfakes make visual content authentication difficult, requiring automated, reliable forensic detection pipelines.',
+      interactionDecisions:
+        'Engineered a split-screen comparison view displaying the original image, ELA gradient heatmap, and confidence score meters with instant drag-and-drop analysis.',
+      accessibilityAndCode:
+        'Paired color heatmaps with explicit textual probability percentages and screen-reader status announcements for uploaded forensic files.',
+    },
+    deliverables: [
+      'Trained CNN classification model',
+      'Error Level Analysis (ELA) preprocessor',
+      'Interactive Flask & React inspection UI',
+    ],
+    githubUrl: 'https://github.com/Arhamaley',
+    liveUrl: 'https://github.com/Arhamaley',
+  },
+  {
+    id: 'electricity-forecast-app',
+    title: 'Electricity Forecast App',
+    category: 'AI & Machine Learning',
+    year: '2025',
+    role: 'ML & Cloud Engineer',
+    badge: 'AWS Deployed',
+    summary:
+      'Cloud-hosted predictive analytics application using machine learning to forecast electricity consumption trends and assist in energy load management.',
+    featured: false,
+    imagePath: '/src/assets/images/work_electricity_forecast.jpg',
+    imageAlt:
+      'High-voltage electrical power transmission lines silhouetted against a dramatic sunset sky',
+    aspectClass: 'aspect-[4/3]',
+    outcome: 'Time-series forecasting models deployed on AWS EC2 assisting in energy load balancing',
+    stack: ['Python', 'AWS EC2', 'Streamlit', 'Pandas', 'Scikit-Learn', 'Time Series ML'],
+    uxBreakdown: {
+      problem:
+        'Energy grids and utility organizations experience costly waste due to inaccurate short-term power demand forecasts and volatile usage patterns.',
+      interactionDecisions:
+        'Created interactive slider controls for model horizons, zoomable time-series charts, and multi-scenario consumption comparison views.',
+      accessibilityAndCode:
+        'Clean tabular breakdowns alongside charts, colorblind-safe metric palettes, and containerized deployment scripts.',
+    },
+    deliverables: [
+      'Time-series ML forecasting models',
+      'Interactive Streamlit web application',
+      'AWS EC2 production hosting setup',
+    ],
+    githubUrl: 'https://github.com/Arhamaley',
+    liveUrl: 'https://github.com/Arhamaley',
+  },
+  {
+    id: 'folder-locker',
+    title: 'Folder Locker',
+    category: 'Web Engineering',
+    year: '2025',
+    role: 'Python Developer',
+    badge: 'Security & Crypto',
+    summary:
+      'Lightweight folder locking and file encryption utility designed to protect sensitive local directories with AES encryption and password authentication.',
+    featured: false,
+    imagePath: '/src/assets/images/work_folder_locker_security.jpg',
+    imageAlt:
+      'Digital cybersecurity lock icon glowing against a dark encrypted server grid background',
+    aspectClass: 'aspect-[4/3]',
+    outcome: 'Fast local AES directory encryption protecting sensitive directories with password authentication',
+    stack: ['Python', 'Cryptography', 'OS Utilities', 'Security', 'Desktop Utility'],
+    uxBreakdown: {
+      problem:
+        'Users need simple, offline privacy solutions to guard private local folders without installing bloated third-party security software.',
+      interactionDecisions:
+        'Minimalist status dashboard with one-key lock/unlock triggers, clear visual status indicators, and emergency recovery prompts.',
+      accessibilityAndCode:
+        'Zero external runtime dependencies, secure key derivation (PBKDF2/SHA-256), and clean command-line flags.',
+    },
+    deliverables: [
+      'Cryptographic file obfuscation engine',
+      'Desktop GUI & CLI interface',
+      'Password hashing & recovery module',
+    ],
+    githubUrl: 'https://github.com/Arhamaley',
+    liveUrl: 'https://github.com/Arhamaley',
+  },
   {
     id: 'kinetix-analytics',
     title: 'Kinetix Financial Telemetry',

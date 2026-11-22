@@ -25,12 +25,17 @@ Verified Profile Facts:
 - Contact Email: arhamaley26@gmail.com
 
 Selected Case Studies in Portfolio:
-1. Kinetix Financial Telemetry (2026, Web Engineering) — Lead Full-Stack Engineer & UI Designer. Stack: React, TypeScript, Node.js, PostgreSQL, Tailwind CSS. Real-time SaaS revenue & metrics workspace with tabular numerals, keyboard-navigable rows, and 42% faster weekly reporting across 18 product teams.
-2. Atlas Architectural Objects (2025, Web Engineering) — Full-Stack Developer & Art Direction. Stack: TypeScript, React, Express, REST API, Stripe Webhooks. Editorial e-commerce storefront with 99 Lighthouse accessibility score and 1.1s median page load.
-3. Pulse Biometric Companion (2025, UI/UX Systems) — UI/UX & Interaction Designer. Stack: Figma, Interaction Prototyping, Design Tokens, WCAG Audits. Mobile-first health & sleep flow with 48px touch targets and reduced daily logging steps from 6 taps to 2 interactions.
-4. Forma Multi-Surface Design System (2026, UI/UX Systems) — Design Systems Architect & Front-End Engineer. Stack: React, TypeScript, CSS Custom Properties, Storybook, ARIA. 28 accessible UI primitives adopted across 5 production web apps.
-5. Grafik.Raum Exhibition Identity (2024, Graphic Design) — Graphic Designer & Art Director. Swiss-inspired brand identity, A1 posters, and tactile stationery across 14 exhibition touchpoints.
-6. Structura Symbol Monograph (2024, Graphic Design) — Editorial & Iconography Designer. 120-page typographic monograph and 16-symbol geometric grid taxonomy exported as pixel-snapped SVGs.
+1. Tracelens (2026, Web Engineering) — Lead Full-Stack Developer. Stack: TypeScript, React, Next.js, Node.js, Socket.io, Tailwind CSS. Distributed request-tracing and developer analytics platform featuring real-time OpenTelemetry span waterfall charts and ML error clustering over WebSockets.
+2. RAG Knowledge Engine & Vector Search (2026, AI & Machine Learning) — Full-Stack & AI Engineer. Stack: TypeScript, React, Google Gemini API, Supabase pgvector, Next.js. Full-stack RAG system with cosine vector similarity search over custom knowledge bases and real-time Gemini LLM response streaming.
+3. Image Tampering Detection (2026, AI & Machine Learning) — AI/ML & Full-Stack Developer. Stack: Python, TensorFlow, OpenCV, Flask, React. Intelligent forensic computer vision system leveraging Error Level Analysis (ELA) and Convolutional Neural Networks (CNNs) to detect digital image splicing with 90%+ accuracy.
+4. Electricity Forecast App (2025, AI & Machine Learning) — ML & Cloud Engineer. Stack: Python, AWS EC2, Streamlit, Scikit-Learn, Pandas. Cloud-hosted predictive analytics application forecasting electricity consumption trends to assist in power load management.
+5. Folder Locker (2025, Web Engineering) — Python Developer. Stack: Python, Cryptography, OS Utilities, Security. Lightweight folder locking and AES encryption utility safeguarding private directories with password authentication.
+6. Kinetix Financial Telemetry (2026, Web Engineering) — Lead Full-Stack Engineer & UI Designer. Stack: React, TypeScript, Node.js, PostgreSQL, Tailwind CSS. Real-time SaaS revenue & metrics workspace with tabular numerals, keyboard-navigable rows, and 42% faster weekly reporting across 18 product teams.
+7. Atlas Architectural Objects (2025, Web Engineering) — Full-Stack Developer & Art Direction. Stack: TypeScript, React, Express, REST API, Stripe Webhooks. Editorial e-commerce storefront with 99 Lighthouse accessibility score and 1.1s median page load.
+8. Pulse Biometric Companion (2025, UI/UX Systems) — UI/UX & Interaction Designer. Stack: Figma, Interaction Prototyping, Design Tokens, WCAG Audits. Mobile-first health & sleep flow with 48px touch targets and reduced daily logging steps from 6 taps to 2 interactions.
+9. Forma Multi-Surface Design System (2026, UI/UX Systems) — Design Systems Architect & Front-End Engineer. Stack: React, TypeScript, CSS Custom Properties, Storybook, ARIA. 28 accessible UI primitives adopted across 5 production web apps.
+10. Grafik.Raum Exhibition Identity (2024, Graphic Design) — Graphic Designer & Art Director. Swiss-inspired brand identity, A1 posters, and tactile stationery across 14 exhibition touchpoints.
+11. Structura Symbol Monograph (2024, Graphic Design) — Editorial & Iconography Designer. 120-page typographic monograph and 16-symbol geometric grid taxonomy exported as pixel-snapped SVGs.
 
 Guidelines:
 - Keep answers concise (2–4 short sentences or crisp bullet points unless the user asks for deep detail).

@@ -17,6 +17,7 @@ type FilterOption = 'All Work' | WorkCategory;
 
 const FILTER_OPTIONS: FilterOption[] = [
   'All Work',
+  'AI & Machine Learning',
   'Web Engineering',
   'UI/UX Systems',
   'Graphic Design',
@@ -28,6 +29,7 @@ export function WorkGallery({ onSelectProject }: WorkGalleryProps) {
   const categoryCounts = useMemo(() => {
     const counts: Record<FilterOption, number> = {
       'All Work': PROJECTS.length,
+      'AI & Machine Learning': 0,
       'Web Engineering': 0,
       'UI/UX Systems': 0,
       'Graphic Design': 0,
@@ -169,9 +171,16 @@ export function WorkGallery({ onSelectProject }: WorkGalleryProps) {
                         </span>
                       </div>
 
-                      <h3 className="mt-2.5 font-display text-lg font-semibold tracking-tight text-[#F4F5F7] transition-colors duration-150 group-hover:text-[#60A5FA]">
-                        {project.title}
-                      </h3>
+                      <div className="mt-2.5 flex items-baseline gap-2">
+                        <h3 className="font-display text-lg font-semibold tracking-tight text-[#F4F5F7] transition-colors duration-150 group-hover:text-[#60A5FA]">
+                          {project.title}
+                        </h3>
+                        {project.badge && (
+                          <span className="inline-block rounded-full border border-[#3B82F6]/30 bg-[#2563EB]/10 px-2 py-0.5 text-[10px] font-medium text-[#60A5FA] whitespace-nowrap shrink-0">
+                            {project.badge}
+                          </span>
+                        )}
+                      </div>
 
                       <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-[#9CA3AF] sm:text-sm">
                         {project.summary}

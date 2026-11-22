@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight, Github, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ProjectItem } from '../data/portfolio';
 import { STAGGER_EASE } from '../lib/motion';
@@ -227,6 +227,23 @@ export function CaseStudyModal({
                       <p className="mt-2.5 text-sm leading-relaxed text-[#F4F5F7]">
                         {project.stack.join(' · ')}
                       </p>
+
+                      {(project.githubUrl || project.liveUrl) && (
+                        <div className="mt-4 flex flex-wrap items-center gap-2.5">
+                          {project.githubUrl && (
+                            <a
+                              href={project.githubUrl}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="inline-flex items-center gap-1.5 rounded-lg border border-[#232732] bg-[#0E1015] px-3 py-1.5 text-xs font-medium text-[#F4F5F7] transition-colors duration-150 hover:border-[#60A5FA] hover:text-[#60A5FA]"
+                            >
+                              <Github className="h-3.5 w-3.5" aria-hidden="true" />
+                              <span>GitHub Repository</span>
+                              <ArrowUpRight className="h-3 w-3 opacity-70" aria-hidden="true" />
+                            </a>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </motion.div>
